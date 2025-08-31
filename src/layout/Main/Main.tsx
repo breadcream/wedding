@@ -6,7 +6,7 @@ const Main = () => {
   const { greeting } = data;
   return (
     <div>
-      <MainImg src={mainImg} />
+      <MainImg src={mainImg}></MainImg>
       <MainTitle>{greeting.title}</MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>
     </div>
@@ -16,10 +16,8 @@ const Main = () => {
 export default Main;
 
 const MainImg = styled.img`
-  border-radius: 200px 200px 0 0;
-  width: 90%;
   max-width: 450px;
-  padding-top: 20px;
+  margin-top: -60px;
 `;
 
 const MainTitle = styled.p`
